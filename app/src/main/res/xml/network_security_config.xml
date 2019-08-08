@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Only in debug in order to be more permissive on debug builds with test data-->
+<network-security-config>
+    <!--Only in debug in order to be more permissive on debug builds with test data-->
+    <base-config cleartextTrafficPermitted="true"/>
+
+    <!--Needed for charles on debuggable builds-->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user"/>
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>
